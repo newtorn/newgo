@@ -1,0 +1,76 @@
+#!/bin/bash
+#__author__: newtorn
+#create_time: 2019/05/20
+
+
+Usage(){
+    echo "
+    Example usage:
+        newgo init
+        newgo help
+        newgo run src/entry/hello.go
+        newgo build src/entry/hello.go
+        newgo install src/entry/hello.go
+
+    Further help:
+        newgo commands
+        newgo help [COMMAND]
+        man newgo
+    "
+}
+
+Init(){
+    echo "Initializing `pwd` to $HOME ..."
+    if [ ! -f $HOME/.newgo ];then
+        echo "Touching file \".newgo\" to $HOME ..."
+        touch $HOME/.newgo
+        echo 'Okay, file ".newgo" has been created!'
+    else
+        echo 'Skip, file ".newgo" has been existed!'
+    fi
+    if [ ! -d `pwd`/src ];then
+        mkdir `pwd`/src
+        echo 'Create floder src has been existed!'
+    else
+        echo 'Skip, floder src has been existed!'
+    fi
+    if [ ! -d `pwd`/bin ];then
+        mkdir `pwd`/bin
+        echo 'Create floder bin to project!'
+    else
+        echo 'Skip, floder bin has been existed!'
+    fi
+    echo 'project='`pwd` > $HOME/.newgo
+    echo 'Successfuly, please use command `newgo` instead of `go`!'
+}
+
+GoCMD(){
+    if [ ! -f $HOME/.newgo ];then
+        echo 'Notice, file ".newgo" has not been created!'
+        echo 'Use command `newgo init` in your project root to init!'
+    else
+        inifile="$HOME/.newgo"
+        pro=`sed '/^project=/!d;s/.*=//' $inifile`
+        if [[ `pwd` == "$pro"* ]];then
+            if [ ! -d $pro ];then
+                echo 'Project \"'$pro'\" does not exists!'
+            else
+                export GOPATH=$pro
+                export GOBIN=$GOPATH/bin
+                go $*
+            fi
+        else
+            echo 'You are using newgo command out of actived project!'
+            echo 'Please use command `go` or `newgo init` here as project!'
+        fi
+    fi
+}
+
+
+# START MAIN-OPTIONS
+case $1 in
+    help) Usage ;;
+    init) Init ;;
+    *) GoCMD $* ;;
+esac
+# END MAIN-OPTIONS
