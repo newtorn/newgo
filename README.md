@@ -13,8 +13,8 @@ Easily use golang in your different projects with newgo
 ## About
 
 [newgo](https://github.com/newtorn/newgo.git) is a GOPATH solution tool. 
-Officially to build and run go packages, your must have global or temporary GOPATH and GOBIN enviroment variables, It's a annoying and not enough freedom.
-Now newgo solved it, so you can easily use golang in your different projects with newgo. And in different projects, it will automatically create a temporary GOPATH and GOBIN to system shell enviroment variable.
+Officially to build and run go packages, your must have global or temporary GOPATH and GOBIN enviroment variables, it's a annoying and not enough freedom.
+Now newgo solved it, so you can easily use golang in your different projects with newgo. And in different projects, it will automatically create temporary GOPATH and GOBIN to system shell enviroment variable.
 
 
 ## QuickStart
