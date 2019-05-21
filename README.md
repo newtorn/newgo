@@ -81,6 +81,7 @@ newgo install hello.go
 newgo help
 ```
 
+
 ## Notice
 
 Once you leave current project and initialize newgo in another project, when you enter this project you must reinitialize again to use newgo.
@@ -88,6 +89,7 @@ Once you leave current project and initialize newgo in another project, when you
 ## Contributing
 
 I'd love you to contribute to newgo, please read our [Contribution Guide](CONTRIBUTING.md)
+
 
 ## License
 
