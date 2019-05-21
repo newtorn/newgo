@@ -85,7 +85,7 @@ newgo help
 
 ## 贡献
 
-我很热爱你为newgo贡献，请阅读我的[贡献指南](CONTRIBUTING.md)
+我很热爱你为newgo贡献，请阅读我的[贡献指南](../CONTRIBUTING.md)
 
 
 ## 声明
