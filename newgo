@@ -56,7 +56,7 @@ GoCMD(){
                 echo 'Project \"'$pro'\" does not exists!'
             else
                 export GOPATH=$pro
-                export GOBIN=$GOPATH/bin
+                export GOBIN=$pro/bin
                 go $*
             fi
         else
