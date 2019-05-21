@@ -51,7 +51,7 @@ GoCMD(){
     else
         inifile="$HOME/.newgo"
         pro=`sed '/^project=/!d;s/.*=//' $inifile`
-        if [[ `pwd` == "$pro"* ]];then
+        if [[ "`pwd`" == $pro* ]];then
             if [ ! -d $pro ];then
                 echo 'Project \"'$pro'\" does not exists!'
             else
