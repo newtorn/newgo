@@ -55,6 +55,7 @@ newgo help
 
 ```
 # first go to your projects
+mkdir go-demo
 cd go-demo
 
 # initialize newgo
