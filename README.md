@@ -17,6 +17,7 @@ So newgo solve it, it easily use golang in your different projects with newgo.An
 
 
 ## QuickStart
+![quickstart](assets/quickstart.gif)
 
 
 ## Installation
