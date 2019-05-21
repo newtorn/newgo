@@ -1,4 +1,4 @@
-<p align="right">En | <a href="../README-zh_cn.md">中文</a>
+<p align="right">En | <a href="./doc/README-zh_cn.md">中文</a>
 <div align="center">
 <h1>NewGO</h1>
 
