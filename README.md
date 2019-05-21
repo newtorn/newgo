@@ -2,7 +2,7 @@
 <div align="center">
 <h1>NewGO</h1>
 
-Easily using golang in your different projects with newgo
+Easily use golang in your different projects with newgo
 
 [![GitHub release](https://img.shields.io/github/release/newtorn/newgo.svg)](https://github.com/newtorn/newgo/releases)
 [![Github repository](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/newtorn/newgo.git)
@@ -14,7 +14,7 @@ Easily using golang in your different projects with newgo
 
 [newgo](https://github.com/newtorn/newgo.git) is a GOPATH solution tool. 
 Officially to build and run go packages, your must have global or temporary GOPATH and GOBIN enviroment variables, It's a annoying and not enough freedom.
-Now newgo solved it, so you can easily use golang in your different projects with newgo.And in different projects, it will automatically create a temporary GOPATH and GOBIN to system shell enviroment variable.
+Now newgo solved it, so you can easily use golang in your different projects with newgo. And in different projects, it will automatically create a temporary GOPATH and GOBIN to system shell enviroment variable.
 
 
 ## QuickStart
