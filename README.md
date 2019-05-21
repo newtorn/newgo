@@ -54,6 +54,7 @@ newgo help
 cd go-demo
 
 # initialize newgo
+# it will create two floders src and bin
 newgo init
 
 # then you can use newgo instead of default go
@@ -74,7 +75,7 @@ newgo help
 Once you leave current project and initialize newgo in another project, when you enter this project you must reinitialize again to use newgo.
 
 ## Contributing
-I'd love you to contribute to newgo, lease read our [Contribution Guide](CONTRIBUTING.md)
+I'd love you to contribute to newgo, please read our [Contribution Guide](CONTRIBUTING.md)
 
 ## License
 Code license with [MIT](LICENSE)
