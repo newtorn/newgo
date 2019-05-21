@@ -2,7 +2,7 @@
 <div align="center">
 <h1>NewGO</h1>
 
-Easily use golang in your different projects with newgo
+Easily using golang in your different projects with newgo
 
 [![GitHub release](https://img.shields.io/github/release/newtorn/newgo.svg)](https://github.com/newtorn/newgo/releases)
 [![Github repository](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/newtorn/newgo.git)
@@ -11,12 +11,14 @@ Easily use golang in your different projects with newgo
 </div>
 
 ## About
+
 [newgo](https://github.com/newtorn/newgo.git) is a GOPATH solution tool. 
-To build and run go packages, your must have global or temporary GOPATH and GOBIN enviroment variables, It's a annoying and not enough freedom.
-So newgo solve it, it easily use golang in your different projects with newgo.And in different projects, it will automatically create a temporary GOPATH and GOBIN to system shell enviroment variable.
+Officially to build and run go packages, your must have global or temporary GOPATH and GOBIN enviroment variables, It's a annoying and not enough freedom.
+Now newgo solved it, so you can easily use golang in your different projects with newgo.And in different projects, it will automatically create a temporary GOPATH and GOBIN to system shell enviroment variable.
 
 
 ## QuickStart
+
 ![quickstart](assets/quickstart.gif)
 
 
@@ -48,7 +50,9 @@ mv newgo /usr/local/bin/newgo
 newgo help
 ```
 
+
 ## Usage
+
 ```
 # first go to your projects
 cd go-demo
@@ -72,10 +76,13 @@ newgo help
 ```
 
 ## Notice
+
 Once you leave current project and initialize newgo in another project, when you enter this project you must reinitialize again to use newgo.
 
 ## Contributing
+
 I'd love you to contribute to newgo, please read our [Contribution Guide](CONTRIBUTING.md)
 
 ## License
+
 Code license with [MIT](LICENSE)
