@@ -88,7 +88,7 @@ Once you leave current project and initialize newgo in another project, when you
 
 ## Contributing
 
-I'd love you to contribute to newgo, please read our [Contribution Guide](CONTRIBUTING.md)
+I'd love you to contribute to newgo, please read my [Contribution Guide](CONTRIBUTING.md)
 
 
 ## License
