@@ -2,7 +2,7 @@
 <div align="center">
 <h1>NewGO</h1>
 
-通过newgo在你的不同的项目中使用golang
+轻松地通过newgo在你不同的项目中使用golang
 
 [![GitHub release](https://img.shields.io/github/release/newtorn/newgo.svg)](https://github.com/newtorn/newgo/releases)
 [![Github repository](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/newtorn/newgo.git)
@@ -17,7 +17,7 @@
 
 ## 快速上手
 
-![quickstart](assets/quickstart.gif)
+![quickstart](../assets/quickstart.gif)
 
 
 ## 安装
