@@ -62,6 +62,11 @@ cd go-demo
 # it will create two floders src and bin
 newgo init
 
+# edit program
+mkdir src/hello-app
+cd src/hello-app
+vim hello.go
+
 # then you can use newgo instead of default go
 # exmaple for command go run
 newgo run hello.go
