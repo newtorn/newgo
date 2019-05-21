@@ -12,7 +12,7 @@
 
 ## 关于
 
-[newgo](https://github.com/newtorn/newgo.git)是一个GOPATH解决工具。在官方的情况下，为了构建和运行golang的包，你必须又一个全局或者临时的GOPATH环境变量，配置这些工作很麻烦而且不够灵活。现在newgo这个工具解决了它，所以你能够轻松地通过newgo在你不同的项目中使用golang。在你不同的项目中，它会在shell中自动为你创建临时的GOPATH和GOBIN环境变量，以供命令行编译golang使用。
+[newgo](https://github.com/newtorn/newgo.git)是一个GOPATH解决工具。在官方的情况下，为了构建和运行golang的包，你必须有一个全局或者临时的GOPATH环境变量，配置这些工作很麻烦而且不够灵活。现在newgo这个工具解决了它，所以你能够轻松地通过newgo在你不同的项目中使用golang。在你不同的项目中，它会在shell中自动为你创建临时的GOPATH和GOBIN环境变量，以供命令行编译golang使用。
 
 
 ## 快速上手
