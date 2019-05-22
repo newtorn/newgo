@@ -90,4 +90,4 @@ newgo help
 
 ## 声明
 
-代码使用 [MIT](LICENSE) 声明
+代码使用 [MIT](../LICENSE) 声明
