@@ -34,6 +34,12 @@ Init(){
     else
         echo 'Skip, floder src has been existed!'
     fi
+    if [ ! -d `pwd`/pkg ];then
+        mkdir `pwd`/pkg
+        echo 'Create floder pkg to project!'
+    else
+        echo 'Skip, floder pkg has been existed!'
+    fi
     if [ ! -d `pwd`/bin ];then
         mkdir `pwd`/bin
         echo 'Create floder bin to project!'
