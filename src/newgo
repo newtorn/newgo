@@ -30,7 +30,7 @@ Init(){
     fi
     if [ ! -d `pwd`/src ];then
         mkdir `pwd`/src
-        echo 'Create floder src has been created!'
+        echo 'Create floder src to project!'
     else
         echo 'Skip, floder src has been existed!'
     fi
