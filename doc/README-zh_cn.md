@@ -55,7 +55,7 @@ mkdir go-demo
 cd go-demo
 
 # 使用newgo初始化
-# 它会在项目中创建src和bin文件夹
+# 它会在项目中创建src，pkg和bin文件夹
 newgo init
 
 # 编写程序
