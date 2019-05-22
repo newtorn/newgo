@@ -59,7 +59,7 @@ mkdir go-demo
 cd go-demo
 
 # initialize newgo
-# it will create two floders src and bin
+# it will create three floders src, pkg and bin
 newgo init
 
 # edit program
