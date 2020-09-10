@@ -37,10 +37,12 @@ brew tap newtorn/tap && brew install newgo
 
 # 方法二：clone仓库到本地
 git clone https://github.com/newtorn/newgo.git
-cd newgo
+cd newgo/src
 
 # 移动脚本到/usr/local/bin
 mv newgo /usr/local/bin/newgo
+# 或者使用 'ln' 创建软连接来代替 'mv' 命令, 这样可以方便的使用'git pull'命令对文件进行更新.
+# ln -s $PWD/newgo /usr/local/bin/newgo
 
 # 测试
 newgo help
