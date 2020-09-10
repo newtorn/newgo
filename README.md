@@ -41,7 +41,7 @@ You should download or copy [newgo](https://github.com/newtorn/newgo.git) shell 
 # First by method 2
 # or git clone newgo repo
 git clone https://github.com/newtorn/newgo.git
-cd newgo
+cd newgo/src
 
 # Second
 mv newgo /usr/local/bin/newgo
