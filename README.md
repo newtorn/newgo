@@ -45,6 +45,8 @@ cd newgo/src
 
 # Second
 mv newgo /usr/local/bin/newgo
+# or you can also using 'ln' to create a soft link rather than 'mv', therefore can update newGo using 'git pull'
+# ln -s $PWD/newgo /usr/local/bin/newgo
 
 # Test
 newgo help
