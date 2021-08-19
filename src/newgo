@@ -2,12 +2,30 @@
 #__author__: newtorn
 #create_time: 2019/05/20
 
+YesOrNo(){
+    read -p "$1[Y/N]? " yn
+    while true; do
+        case $yn in
+            [Yy]|[Yy][Ee][Ss] )
+                return 0
+                ;;
+            [Nn]|[Nn][Oo] )
+                return 1
+                ;;
+            * )
+                echo -n "Please type yes or no: "
+                read yn
+                ;;
+        esac
+    done
+}
 
 Usage(){
     echo "
     Example usage:
         newgo init
         newgo help
+        newgo unset
         newgo run src/entry/hello.go
         newgo build src/entry/hello.go
         newgo install src/entry/hello.go
@@ -31,13 +49,28 @@ Init(){
     for fd in src pkg bin; do
         if [ ! -d `pwd`/$fd ];then
             mkdir `pwd`/$fd
-            echo "Create floder ${fd} to project!"
+            echo "Created floder ${fd} to project!"
         else
             echo "Skip, floder ${fd} has been existed!"
         fi
     done
     echo 'project='`pwd` > $HOME/.newgo
     echo 'Successfuly, please use command `newgo` instead of `go`!'
+}
+
+Unset() {
+    if YesOrNo "Unset newgo enviroment in `pwd` "; then
+        echo 'Removing newgo environment...'
+        rm -rf $HOME/.newgo
+        echo "Deleted file \".newgo\" in $HOME ..."
+        for fd in src pkg bin; do
+            rm -rf `pwd`/$fd
+            echo "Deleted floder ${fd} in project!"
+        done
+        echo 'Successfully, please use command `newgo init` to init again!'
+    else
+        echo 'Discarded unset operation!'
+    fi
 }
 
 GoCMD(){
@@ -67,6 +100,7 @@ GoCMD(){
 case $1 in
     help) Usage ;;
     init) Init ;;
+    unset) Unset ;;
     *) GoCMD $* ;;
 esac
 # END MAIN-OPTIONS
