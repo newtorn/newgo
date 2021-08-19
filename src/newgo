@@ -28,24 +28,14 @@ Init(){
     else
         echo 'Skip, file ".newgo" has been existed!'
     fi
-    if [ ! -d `pwd`/src ];then
-        mkdir `pwd`/src
-        echo 'Create floder src to project!'
-    else
-        echo 'Skip, floder src has been existed!'
-    fi
-    if [ ! -d `pwd`/pkg ];then
-        mkdir `pwd`/pkg
-        echo 'Create floder pkg to project!'
-    else
-        echo 'Skip, floder pkg has been existed!'
-    fi
-    if [ ! -d `pwd`/bin ];then
-        mkdir `pwd`/bin
-        echo 'Create floder bin to project!'
-    else
-        echo 'Skip, floder bin has been existed!'
-    fi
+    for fd in src pkg bin; do
+        if [ ! -d `pwd`/$fd ];then
+            mkdir `pwd`/$fd
+            echo "Create floder ${fd} to project!"
+        else
+            echo "Skip, floder ${fd} has been existed!"
+        fi
+    done
     echo 'project='`pwd` > $HOME/.newgo
     echo 'Successfuly, please use command `newgo` instead of `go`!'
 }
