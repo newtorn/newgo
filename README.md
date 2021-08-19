@@ -41,10 +41,12 @@ You should download or copy [newgo](https://github.com/newtorn/newgo.git) shell 
 # First by method 2
 # or git clone newgo repo
 git clone https://github.com/newtorn/newgo.git
-cd newgo
+cd newgo/src
 
 # Second
 mv newgo /usr/local/bin/newgo
+# or you can also using 'ln' to create a soft link rather than 'mv', therefore can update newGo using 'git pull'
+# ln -s $PWD/newgo /usr/local/bin/newgo
 
 # Test
 newgo help
